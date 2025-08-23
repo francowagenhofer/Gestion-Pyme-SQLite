@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="CreateDB.db" readonly="0" foreign_keys="0" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="2401"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="AsignacionBonos" custom_title="0" dock_id="1" table="4,15:mainAsignacionBonos"/><dock_state state="000000ff00000000fd0000000100000002000005f40000030efc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000000005f40000016600ffffff000005f40000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="AsignacionBonos" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="29"/><column index="2" value="77"/><column index="3" value="74"/><column index="4" value="210"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1*">-- Tablas principales
+CREATE TABLE Categorias (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Nombre TEXT,
+    Descripcion TEXT
+);
+
+CREATE TABLE Salarios (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    IdCategoria INTEGER NOT NULL,
+    Monto REAL NOT NULL,
+    FOREIGN KEY (IdCategoria) REFERENCES Categorias(Id)
+);
+
+CREATE TABLE Empleados (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Nombre TEXT,
+    Apellido TEXT,
+    FechaNacimiento TEXT,
+    DNI TEXT UNIQUE,
+    Imagen TEXT,
+    FechaIngreso TEXT,
+    IdCategoria INTEGER NOT NULL,
+    IdSalario INTEGER,
+    IsActive INTEGER DEFAULT 1,
+    FOREIGN KEY (IdCategoria) REFERENCES Categorias(Id),
+    FOREIGN KEY (IdSalario) REFERENCES Salarios(Id)
+);
+
+CREATE TABLE TipoBonos (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Nombre TEXT,
+    Monto REAL DEFAULT 0
+);
+
+CREATE TABLE AsignacionBonos (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    IdEmpleado INTEGER NOT NULL,
+    IdTipoBono INTEGER NOT NULL,
+    FechaAsignacion TEXT,
+    FOREIGN KEY (IdEmpleado) REFERENCES Empleados(Id),
+    FOREIGN KEY (IdTipoBono) REFERENCES TipoBonos(Id),
+    UNIQUE(IdEmpleado, IdTipoBono)
+);
+
+CREATE TABLE Proyectos (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Nombre TEXT,
+    Descripcion TEXT,
+    FechaInicio TEXT,
+    FechaFin TEXT,
+    Presupuesto REAL,
+    EstadoProyecto TEXT,
+    IsActive INTEGER DEFAULT 1
+);
+
+CREATE TABLE AsignacionProyectos (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    IdEmpleado INTEGER NOT NULL,
+    IdProyecto INTEGER NOT NULL,
+    FOREIGN KEY (IdEmpleado) REFERENCES Empleados(Id),
+    FOREIGN KEY (IdProyecto) REFERENCES Proyectos(Id)
+);
+
+CREATE TABLE Tareas (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Nombre TEXT,
+    Descripcion TEXT,
+    FechaInicio TEXT,
+    FechaFin TEXT,
+    Estado TEXT
+);
+
+CREATE TABLE TareasProyectos (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    IdTarea INTEGER NOT NULL,
+    IdProyecto INTEGER NOT NULL,
+    FOREIGN KEY (IdTarea) REFERENCES Tareas(Id),
+    FOREIGN KEY (IdProyecto) REFERENCES Proyectos(Id),
+    UNIQUE(IdTarea, IdProyecto)
+);
+
+
+CREATE TABLE AsignacionTareas (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    IdTareaProyecto INTEGER NOT NULL,
+    IdEmpleado INTEGER NOT NULL,
+    IdProyecto INTEGER NOT NULL,
+    FechaAsignacion TEXT,
+    FOREIGN KEY (IdTareaProyecto) REFERENCES TareasProyectos(Id),
+    FOREIGN KEY (IdEmpleado) REFERENCES Empleados(Id),
+    FOREIGN KEY (IdProyecto) REFERENCES Proyectos(Id),
+    UNIQUE(IdTareaProyecto, IdEmpleado)
+);
+
+CREATE TABLE Roles (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Nombre TEXT,
+    Descripcion TEXT
+);
+
+CREATE TABLE AsignacionRolesProyecto (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    IdEmpleado INTEGER,
+    IdRol INTEGER NOT NULL,
+    IdProyecto INTEGER NOT NULL,
+    FechaAsignacion TEXT,
+    FOREIGN KEY(IdEmpleado) REFERENCES Empleados(Id),
+    FOREIGN KEY(IdProyecto) REFERENCES Proyectos(Id),
+    FOREIGN KEY(IdRol) REFERENCES Roles(Id),
+    UNIQUE(IdEmpleado, IdProyecto)
+);
+
+CREATE TABLE ReportesFinanzas (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    TotalSalarios REAL,
+    TotalBonos REAL,
+    TotalPresupuestosProyectos REAL,
+    TotalGastos REAL,
+    FechaGeneracion TEXT
+);
+
+CREATE TABLE ReportesProyectos (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    IdProyecto INTEGER NOT NULL,
+    NombreProyecto TEXT,
+    Presupuesto REAL,
+    EstadoProyecto TEXT,
+    AsignacionesEmpleados TEXT,
+    TareasAsignadas TEXT,
+    RolesAsignados TEXT,
+    TiempoEstimado REAL,
+    FechaGeneracion TEXT,
+    FOREIGN KEY (IdProyecto) REFERENCES Proyectos(Id)
+);
+
+CREATE TABLE ReportesEmpleados (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    IdEmpleado INTEGER NOT NULL,
+    NombreEmpleado TEXT,
+    Categoria TEXT,
+    SalarioActual REAL,
+    TotalBonos REAL,
+    ProyectosAsignados TEXT,
+    RolesAsignados TEXT,
+    TareasAsignadas TEXT,
+    FechaGeneracion TEXT,
+    FOREIGN KEY (IdEmpleado) REFERENCES Empleados(Id)
+);
+
+CREATE TABLE Usuarios (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Email TEXT UNIQUE NOT NULL,
+    PasswordHash TEXT NOT NULL,
+    Nombre TEXT,
+    Apellido TEXT,
+    ImagenPerfil TEXT,
+    Admin INTEGER DEFAULT 0
+);
+
+CREATE TABLE Clientes (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Nombre TEXT,
+    Email TEXT UNIQUE,
+    Telefono TEXT,
+    Direccion TEXT
+);
+
+CREATE TABLE AsignacionClientesProyectos (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    IdCliente INTEGER NOT NULL,
+    IdProyecto INTEGER NOT NULL,
+    FechaAsignacion TEXT,
+    FOREIGN KEY (IdCliente) REFERENCES Clientes(Id),
+    FOREIGN KEY (IdProyecto) REFERENCES Proyectos(Id)
+);
+
+
+-- Categorias
+INSERT INTO Categorias (Nombre, Descripcion)
+VALUES
+    ('Operativo', 'Personal administrativo, técnico y de soporte'),
+    ('Gerente', 'Personal de gestión y dirección'),
+    ('Director', 'Directores de empresa');
+
+-- Salarios
+INSERT INTO Salarios (Monto, IdCategoria)
+VALUES
+(2000.00, 1), 
+(4000.00, 2),  
+(6000.00, 3);
+
+-- Tipos de Bono
+INSERT INTO TipoBonos (Nombre)
+VALUES 
+    ('BonoAsistencia'), 
+    ('BonoHorasExtra'), 
+    ('BonoDesempeño'),
+    ('BonoMetaEquipo'),
+    ('BonoReduccionCostos'), 
+    ('BonoSatisfaccionCliente'),
+    ('BonoDesempeñoEmpresa'),
+    ('BonoCrecimientoMercado'),
+    ('StockOptions');
+
+-- Actualizar montos
+UPDATE TipoBonos SET Monto = 1000.00 WHERE Nombre = 'BonoAsistencia';
+UPDATE TipoBonos SET Monto = 1500.00 WHERE Nombre = 'BonoHorasExtra';
+UPDATE TipoBonos SET Monto = 2000.00 WHERE Nombre = 'BonoDesempeño';
+UPDATE TipoBonos SET Monto = 1800.00 WHERE Nombre = 'BonoMetaEquipo';
+UPDATE TipoBonos SET Monto = 1200.00 WHERE Nombre = 'BonoReduccionCostos';
+UPDATE TipoBonos SET Monto = 1100.00 WHERE Nombre = 'BonoSatisfaccionCliente';
+UPDATE TipoBonos SET Monto = 2500.00 WHERE Nombre = 'BonoDesempeñoEmpresa';
+UPDATE TipoBonos SET Monto = 2200.00 WHERE Nombre = 'BonoCrecimientoMercado';
+UPDATE TipoBonos SET Monto = 3000.00 WHERE Nombre = 'StockOptions';
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

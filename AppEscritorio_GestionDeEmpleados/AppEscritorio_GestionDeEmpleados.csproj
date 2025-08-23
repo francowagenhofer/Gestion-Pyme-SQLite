@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.csproj" />
+    <ProjectReference Include="..\Negocio\Negocio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="FormAsignacionProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDetalleReporteProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormGestionarProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormGestionarCategoriasYSalarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormGestionarBono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormGestionarTarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormProyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="CreateDB.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
