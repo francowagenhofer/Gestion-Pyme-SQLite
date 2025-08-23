@@ -9,8 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Negocio", "Negocio\Negocio.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GestiónPymeDB", "GestiónPymeDB", "{A48B32DA-50E7-4EF5-AE4E-7F7B72117EB4}"
 	ProjectSection(SolutionItems) = preProject
-		AccesoDatos\Create_DB.sql = AccesoDatos\Create_DB.sql
-		AccesoDatos\Funciones.sql = AccesoDatos\Funciones.sql
+		ContenidoDB.txt = ContenidoDB.txt
+		CreateDB.txt = CreateDB.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppEscritorio_GestionDeEmpleados", "AppEscritorio_GestionDeEmpleados\AppEscritorio_GestionDeEmpleados.csproj", "{7B1F87BF-DD34-497C-A00A-CDB5ABA8A3BD}"
