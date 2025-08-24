@@ -85,7 +85,7 @@
             statusStrip1.Items.AddRange(new ToolStripItem[] { tsFecha });
             statusStrip1.Location = new Point(0, 628);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(1008, 31);
+            statusStrip1.Size = new Size(1188, 31);
             statusStrip1.TabIndex = 0;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -112,7 +112,7 @@
             tlpFondo.RowStyles.Add(new RowStyle(SizeType.Percent, 89.61268F));
             tlpFondo.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
             tlpFondo.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tlpFondo.Size = new Size(1008, 628);
+            tlpFondo.Size = new Size(1188, 628);
             tlpFondo.TabIndex = 2;
             // 
             // tlpTitulo
@@ -127,7 +127,7 @@
             tlpTitulo.Name = "tlpTitulo";
             tlpTitulo.RowCount = 1;
             tlpTitulo.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tlpTitulo.Size = new Size(942, 56);
+            tlpTitulo.Size = new Size(1122, 56);
             tlpTitulo.TabIndex = 0;
             // 
             // lblTitulo
@@ -136,7 +136,7 @@
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTitulo.ForeColor = Color.Navy;
-            lblTitulo.Location = new Point(424, 9);
+            lblTitulo.Location = new Point(514, 9);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(94, 38);
             lblTitulo.TabIndex = 0;
@@ -160,7 +160,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 442F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Size = new Size(942, 529);
+            tableLayoutPanel1.Size = new Size(1122, 529);
             tableLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel3
@@ -169,12 +169,12 @@
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel3.Controls.Add(tableLayoutPanel7, 0, 0);
             tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new Point(432, 3);
+            tableLayoutPanel3.Location = new Point(514, 3);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 99.99999F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel3.Size = new Size(501, 523);
+            tableLayoutPanel3.Size = new Size(599, 523);
             tableLayoutPanel3.TabIndex = 1;
             // 
             // tableLayoutPanel7
@@ -191,7 +191,7 @@
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 67.42268F));
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 1.64948452F));
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 30.72165F));
-            tableLayoutPanel7.Size = new Size(495, 517);
+            tableLayoutPanel7.Size = new Size(593, 517);
             tableLayoutPanel7.TabIndex = 1;
             // 
             // tableLayoutPanel6
@@ -206,7 +206,7 @@
             tableLayoutPanel6.Name = "tableLayoutPanel6";
             tableLayoutPanel6.RowCount = 1;
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel6.Size = new Size(483, 152);
+            tableLayoutPanel6.Size = new Size(581, 152);
             tableLayoutPanel6.TabIndex = 0;
             // 
             // btnCancelar
@@ -214,11 +214,11 @@
             btnCancelar.Dock = DockStyle.Fill;
             btnCancelar.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCancelar.ForeColor = Color.SteelBlue;
-            btnCancelar.Location = new Point(258, 30);
+            btnCancelar.Location = new Point(304, 30);
             btnCancelar.Margin = new Padding(30);
             btnCancelar.MinimumSize = new Size(171, 41);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(195, 92);
+            btnCancelar.Size = new Size(247, 92);
             btnCancelar.TabIndex = 6;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -233,7 +233,7 @@
             btnGuardar.Margin = new Padding(30);
             btnGuardar.MinimumSize = new Size(170, 41);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(170, 92);
+            btnGuardar.Size = new Size(214, 92);
             btnGuardar.TabIndex = 5;
             btnGuardar.Text = "Agregar";
             btnGuardar.UseVisualStyleBackColor = true;
@@ -256,7 +256,7 @@
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Absolute, 242F));
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Absolute, 35F));
-            tableLayoutPanel8.Size = new Size(483, 339);
+            tableLayoutPanel8.Size = new Size(581, 339);
             tableLayoutPanel8.TabIndex = 0;
             // 
             // tbUrlImagen
@@ -264,10 +264,10 @@
             tbUrlImagen.BorderStyle = BorderStyle.FixedSingle;
             tbUrlImagen.Dock = DockStyle.Fill;
             tbUrlImagen.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tbUrlImagen.Location = new Point(35, 307);
+            tbUrlImagen.Location = new Point(42, 307);
             tbUrlImagen.Name = "tbUrlImagen";
             tbUrlImagen.PlaceholderText = "Insertar URL Imagen";
-            tbUrlImagen.Size = new Size(372, 31);
+            tbUrlImagen.Size = new Size(449, 31);
             tbUrlImagen.TabIndex = 0;
             tbUrlImagen.TextAlign = HorizontalAlignment.Center;
             // 
@@ -278,10 +278,10 @@
             lblFoto.FlatStyle = FlatStyle.Flat;
             lblFoto.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblFoto.ForeColor = Color.Navy;
-            lblFoto.Location = new Point(32, 0);
+            lblFoto.Location = new Point(39, 0);
             lblFoto.Margin = new Padding(0);
             lblFoto.Name = "lblFoto";
-            lblFoto.Size = new Size(378, 62);
+            lblFoto.Size = new Size(455, 62);
             lblFoto.TabIndex = 0;
             lblFoto.Text = "Imagen de Perfil";
             lblFoto.TextAlign = ContentAlignment.MiddleCenter;
@@ -290,9 +290,9 @@
             // 
             pbImagen.BorderStyle = BorderStyle.FixedSingle;
             pbImagen.Dock = DockStyle.Fill;
-            pbImagen.Location = new Point(35, 65);
+            pbImagen.Location = new Point(42, 65);
             pbImagen.Name = "pbImagen";
-            pbImagen.Size = new Size(372, 236);
+            pbImagen.Size = new Size(449, 236);
             pbImagen.SizeMode = PictureBoxSizeMode.Zoom;
             pbImagen.TabIndex = 1;
             pbImagen.TabStop = false;
@@ -300,10 +300,10 @@
             // btnBuscarImagen
             // 
             btnBuscarImagen.Dock = DockStyle.Fill;
-            btnBuscarImagen.Location = new Point(410, 304);
+            btnBuscarImagen.Location = new Point(494, 304);
             btnBuscarImagen.Margin = new Padding(0, 0, 3, 0);
             btnBuscarImagen.Name = "btnBuscarImagen";
-            btnBuscarImagen.Size = new Size(70, 35);
+            btnBuscarImagen.Size = new Size(84, 35);
             btnBuscarImagen.TabIndex = 1;
             btnBuscarImagen.Text = "+";
             btnBuscarImagen.UseVisualStyleBackColor = true;
@@ -549,11 +549,11 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(1008, 659);
+            ClientSize = new Size(1188, 659);
             Controls.Add(tlpFondo);
             Controls.Add(statusStrip1);
             FormBorderStyle = FormBorderStyle.Fixed3D;
-            MinimumSize = new Size(1030, 710);
+            MinimumSize = new Size(1210, 710);
             Name = "FormGestionarEmpleado";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterParent;

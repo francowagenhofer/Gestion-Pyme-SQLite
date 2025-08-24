@@ -116,7 +116,7 @@
             statusStrip1.Items.AddRange(new ToolStripItem[] { tsFecha });
             statusStrip1.Location = new Point(0, 628);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(1008, 31);
+            statusStrip1.Size = new Size(1188, 31);
             statusStrip1.TabIndex = 1;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -136,7 +136,7 @@
             tpAsignacionTarea.Location = new Point(4, 40);
             tpAsignacionTarea.Name = "tpAsignacionTarea";
             tpAsignacionTarea.Padding = new Padding(3);
-            tpAsignacionTarea.Size = new Size(1000, 584);
+            tpAsignacionTarea.Size = new Size(1180, 584);
             tpAsignacionTarea.TabIndex = 2;
             tpAsignacionTarea.Text = "Tareas";
             tpAsignacionTarea.UseWaitCursor = true;
@@ -156,7 +156,7 @@
             tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 15F));
             tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 85F));
             tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Absolute, 25F));
-            tableLayoutPanel10.Size = new Size(990, 574);
+            tableLayoutPanel10.Size = new Size(1170, 574);
             tableLayoutPanel10.TabIndex = 1;
             tableLayoutPanel10.UseWaitCursor = true;
             // 
@@ -172,7 +172,7 @@
             tableLayoutPanel11.Name = "tableLayoutPanel11";
             tableLayoutPanel11.RowCount = 1;
             tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel11.Size = new Size(924, 460);
+            tableLayoutPanel11.Size = new Size(1104, 460);
             tableLayoutPanel11.TabIndex = 0;
             tableLayoutPanel11.UseWaitCursor = true;
             // 
@@ -190,7 +190,7 @@
             tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel12.Size = new Size(456, 454);
+            tableLayoutPanel12.Size = new Size(546, 454);
             tableLayoutPanel12.TabIndex = 2;
             tableLayoutPanel12.UseWaitCursor = true;
             // 
@@ -203,7 +203,7 @@
             groupBox5.ForeColor = Color.SteelBlue;
             groupBox5.Location = new Point(13, 23);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(430, 408);
+            groupBox5.Size = new Size(520, 408);
             groupBox5.TabIndex = 0;
             groupBox5.TabStop = false;
             groupBox5.Text = "Tareas asignadas";
@@ -240,13 +240,13 @@
             tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 10F));
             tableLayoutPanel13.Controls.Add(groupBox6, 1, 1);
             tableLayoutPanel13.Dock = DockStyle.Fill;
-            tableLayoutPanel13.Location = new Point(465, 3);
+            tableLayoutPanel13.Location = new Point(555, 3);
             tableLayoutPanel13.Name = "tableLayoutPanel13";
             tableLayoutPanel13.RowCount = 3;
             tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel13.Size = new Size(456, 454);
+            tableLayoutPanel13.Size = new Size(546, 454);
             tableLayoutPanel13.TabIndex = 3;
             tableLayoutPanel13.UseWaitCursor = true;
             // 
@@ -260,7 +260,7 @@
             groupBox6.ForeColor = Color.SteelBlue;
             groupBox6.Location = new Point(13, 23);
             groupBox6.Name = "groupBox6";
-            groupBox6.Size = new Size(430, 408);
+            groupBox6.Size = new Size(520, 408);
             groupBox6.TabIndex = 1;
             groupBox6.TabStop = false;
             groupBox6.Text = "Tareas disponibles";
@@ -269,7 +269,7 @@
             // btnSalirTareas
             // 
             btnSalirTareas.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSalirTareas.Location = new Point(314, 343);
+            btnSalirTareas.Location = new Point(404, 345);
             btnSalirTareas.Name = "btnSalirTareas";
             btnSalirTareas.Size = new Size(110, 57);
             btnSalirTareas.TabIndex = 4;
@@ -298,7 +298,7 @@
             dgvTareasDisponibles.MinimumSize = new Size(418, 227);
             dgvTareasDisponibles.Name = "dgvTareasDisponibles";
             dgvTareasDisponibles.RowHeadersWidth = 51;
-            dgvTareasDisponibles.Size = new Size(418, 302);
+            dgvTareasDisponibles.Size = new Size(508, 302);
             dgvTareasDisponibles.TabIndex = 0;
             dgvTareasDisponibles.UseWaitCursor = true;
             // 
@@ -317,7 +317,7 @@
             tableLayoutPanel14.Name = "tableLayoutPanel14";
             tableLayoutPanel14.RowCount = 1;
             tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel14.Size = new Size(924, 76);
+            tableLayoutPanel14.Size = new Size(1104, 76);
             tableLayoutPanel14.TabIndex = 3;
             tableLayoutPanel14.UseWaitCursor = true;
             // 
@@ -327,7 +327,7 @@
             lblEmpleadoTarea.AutoSize = true;
             lblEmpleadoTarea.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblEmpleadoTarea.ForeColor = Color.Navy;
-            lblEmpleadoTarea.Location = new Point(465, 22);
+            lblEmpleadoTarea.Location = new Point(555, 22);
             lblEmpleadoTarea.Name = "lblEmpleadoTarea";
             lblEmpleadoTarea.Size = new Size(107, 31);
             lblEmpleadoTarea.TabIndex = 3;
@@ -356,7 +356,7 @@
             tpAsignacionRol.Location = new Point(4, 40);
             tpAsignacionRol.Name = "tpAsignacionRol";
             tpAsignacionRol.Padding = new Padding(3);
-            tpAsignacionRol.Size = new Size(1000, 584);
+            tpAsignacionRol.Size = new Size(1180, 584);
             tpAsignacionRol.TabIndex = 1;
             tpAsignacionRol.Text = "Roles";
             tpAsignacionRol.UseWaitCursor = true;
@@ -376,7 +376,7 @@
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 15F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 85F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Absolute, 25F));
-            tableLayoutPanel5.Size = new Size(990, 574);
+            tableLayoutPanel5.Size = new Size(1170, 574);
             tableLayoutPanel5.TabIndex = 1;
             tableLayoutPanel5.UseWaitCursor = true;
             // 
@@ -392,7 +392,7 @@
             tableLayoutPanel6.Name = "tableLayoutPanel6";
             tableLayoutPanel6.RowCount = 1;
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel6.Size = new Size(924, 460);
+            tableLayoutPanel6.Size = new Size(1104, 460);
             tableLayoutPanel6.TabIndex = 0;
             tableLayoutPanel6.UseWaitCursor = true;
             // 
@@ -410,7 +410,7 @@
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel7.Size = new Size(456, 454);
+            tableLayoutPanel7.Size = new Size(546, 454);
             tableLayoutPanel7.TabIndex = 2;
             tableLayoutPanel7.UseWaitCursor = true;
             // 
@@ -423,7 +423,7 @@
             groupBox3.ForeColor = Color.SteelBlue;
             groupBox3.Location = new Point(13, 23);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(430, 408);
+            groupBox3.Size = new Size(520, 408);
             groupBox3.TabIndex = 0;
             groupBox3.TabStop = false;
             groupBox3.Text = "Roles asignados";
@@ -445,10 +445,10 @@
             // 
             dgvRolesAsignados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvRolesAsignados.Location = new Point(6, 37);
-            dgvRolesAsignados.MinimumSize = new Size(418, 227);
+            dgvRolesAsignados.MinimumSize = new Size(508, 302);
             dgvRolesAsignados.Name = "dgvRolesAsignados";
             dgvRolesAsignados.RowHeadersWidth = 51;
-            dgvRolesAsignados.Size = new Size(418, 300);
+            dgvRolesAsignados.Size = new Size(508, 302);
             dgvRolesAsignados.TabIndex = 0;
             dgvRolesAsignados.UseWaitCursor = true;
             // 
@@ -460,13 +460,13 @@
             tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 10F));
             tableLayoutPanel8.Controls.Add(groupBox4, 1, 1);
             tableLayoutPanel8.Dock = DockStyle.Fill;
-            tableLayoutPanel8.Location = new Point(465, 3);
+            tableLayoutPanel8.Location = new Point(555, 3);
             tableLayoutPanel8.Name = "tableLayoutPanel8";
             tableLayoutPanel8.RowCount = 3;
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel8.Size = new Size(456, 454);
+            tableLayoutPanel8.Size = new Size(546, 454);
             tableLayoutPanel8.TabIndex = 3;
             tableLayoutPanel8.UseWaitCursor = true;
             // 
@@ -480,7 +480,7 @@
             groupBox4.ForeColor = Color.SteelBlue;
             groupBox4.Location = new Point(13, 23);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(430, 408);
+            groupBox4.Size = new Size(520, 408);
             groupBox4.TabIndex = 1;
             groupBox4.TabStop = false;
             groupBox4.Text = "Roles disponibles";
@@ -489,7 +489,7 @@
             // btnSalirRoles
             // 
             btnSalirRoles.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSalirRoles.Location = new Point(314, 343);
+            btnSalirRoles.Location = new Point(404, 345);
             btnSalirRoles.Name = "btnSalirRoles";
             btnSalirRoles.Size = new Size(110, 57);
             btnSalirRoles.TabIndex = 5;
@@ -515,16 +515,15 @@
             dgvRolesDisponibles.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvRolesDisponibles.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvRolesDisponibles.Location = new Point(6, 37);
-            dgvRolesDisponibles.MinimumSize = new Size(418, 227);
+            dgvRolesDisponibles.MinimumSize = new Size(508, 302);
             dgvRolesDisponibles.Name = "dgvRolesDisponibles";
             dgvRolesDisponibles.RowHeadersWidth = 51;
-            dgvRolesDisponibles.Size = new Size(418, 302);
+            dgvRolesDisponibles.Size = new Size(508, 302);
             dgvRolesDisponibles.TabIndex = 0;
             dgvRolesDisponibles.UseWaitCursor = true;
             // 
             // tableLayoutPanel9
             // 
-            tableLayoutPanel9.Anchor = AnchorStyles.Left;
             tableLayoutPanel9.ColumnCount = 3;
             tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle());
@@ -532,12 +531,13 @@
             tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             tableLayoutPanel9.Controls.Add(lblEmpleadoRol, 2, 0);
             tableLayoutPanel9.Controls.Add(label2, 0, 0);
-            tableLayoutPanel9.Location = new Point(33, 6);
+            tableLayoutPanel9.Dock = DockStyle.Fill;
+            tableLayoutPanel9.Location = new Point(33, 3);
             tableLayoutPanel9.MinimumSize = new Size(734, 64);
             tableLayoutPanel9.Name = "tableLayoutPanel9";
             tableLayoutPanel9.RowCount = 1;
             tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel9.Size = new Size(924, 70);
+            tableLayoutPanel9.Size = new Size(1104, 76);
             tableLayoutPanel9.TabIndex = 3;
             tableLayoutPanel9.UseWaitCursor = true;
             // 
@@ -547,7 +547,7 @@
             lblEmpleadoRol.AutoSize = true;
             lblEmpleadoRol.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblEmpleadoRol.ForeColor = Color.Navy;
-            lblEmpleadoRol.Location = new Point(465, 19);
+            lblEmpleadoRol.Location = new Point(555, 22);
             lblEmpleadoRol.Name = "lblEmpleadoRol";
             lblEmpleadoRol.Size = new Size(107, 31);
             lblEmpleadoRol.TabIndex = 2;
@@ -560,7 +560,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Navy;
-            label2.Location = new Point(3, 16);
+            label2.Location = new Point(3, 19);
             label2.Name = "label2";
             label2.Size = new Size(265, 38);
             label2.TabIndex = 0;
@@ -575,7 +575,7 @@
             tpAsignacionEmpleado.Location = new Point(4, 40);
             tpAsignacionEmpleado.Name = "tpAsignacionEmpleado";
             tpAsignacionEmpleado.Padding = new Padding(3);
-            tpAsignacionEmpleado.Size = new Size(1000, 584);
+            tpAsignacionEmpleado.Size = new Size(1180, 584);
             tpAsignacionEmpleado.TabIndex = 0;
             tpAsignacionEmpleado.Text = "Empleados";
             tpAsignacionEmpleado.UseWaitCursor = true;
@@ -595,7 +595,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 15F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 85F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 25F));
-            tableLayoutPanel1.Size = new Size(990, 574);
+            tableLayoutPanel1.Size = new Size(1170, 574);
             tableLayoutPanel1.TabIndex = 0;
             tableLayoutPanel1.UseWaitCursor = true;
             // 
@@ -611,7 +611,7 @@
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.Size = new Size(924, 460);
+            tableLayoutPanel2.Size = new Size(1104, 460);
             tableLayoutPanel2.TabIndex = 0;
             tableLayoutPanel2.UseWaitCursor = true;
             // 
@@ -629,7 +629,7 @@
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel3.Size = new Size(456, 454);
+            tableLayoutPanel3.Size = new Size(546, 454);
             tableLayoutPanel3.TabIndex = 2;
             tableLayoutPanel3.UseWaitCursor = true;
             // 
@@ -642,7 +642,7 @@
             groupBox1.ForeColor = Color.SteelBlue;
             groupBox1.Location = new Point(13, 23);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(430, 408);
+            groupBox1.Size = new Size(520, 408);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Empleados asignados";
@@ -664,10 +664,10 @@
             // 
             dgvEmpleadosAsignados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvEmpleadosAsignados.Location = new Point(6, 37);
-            dgvEmpleadosAsignados.MinimumSize = new Size(418, 227);
+            dgvEmpleadosAsignados.MinimumSize = new Size(508, 302);
             dgvEmpleadosAsignados.Name = "dgvEmpleadosAsignados";
             dgvEmpleadosAsignados.RowHeadersWidth = 51;
-            dgvEmpleadosAsignados.Size = new Size(418, 299);
+            dgvEmpleadosAsignados.Size = new Size(508, 302);
             dgvEmpleadosAsignados.TabIndex = 0;
             dgvEmpleadosAsignados.UseWaitCursor = true;
             // 
@@ -679,13 +679,13 @@
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 10F));
             tableLayoutPanel4.Controls.Add(groupBox2, 1, 1);
             tableLayoutPanel4.Dock = DockStyle.Fill;
-            tableLayoutPanel4.Location = new Point(465, 3);
+            tableLayoutPanel4.Location = new Point(555, 3);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 3;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Absolute, 21F));
-            tableLayoutPanel4.Size = new Size(456, 454);
+            tableLayoutPanel4.Size = new Size(546, 454);
             tableLayoutPanel4.TabIndex = 3;
             tableLayoutPanel4.UseWaitCursor = true;
             // 
@@ -699,7 +699,7 @@
             groupBox2.ForeColor = Color.SteelBlue;
             groupBox2.Location = new Point(13, 23);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(430, 407);
+            groupBox2.Size = new Size(520, 407);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Empleados disponibles";
@@ -708,7 +708,7 @@
             // btnSalirProyectos
             // 
             btnSalirProyectos.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSalirProyectos.Location = new Point(314, 343);
+            btnSalirProyectos.Location = new Point(404, 345);
             btnSalirProyectos.Name = "btnSalirProyectos";
             btnSalirProyectos.Size = new Size(110, 57);
             btnSalirProyectos.TabIndex = 3;
@@ -734,10 +734,10 @@
             dgvEmpleadosDisponibles.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvEmpleadosDisponibles.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvEmpleadosDisponibles.Location = new Point(6, 37);
-            dgvEmpleadosDisponibles.MinimumSize = new Size(418, 227);
+            dgvEmpleadosDisponibles.MinimumSize = new Size(508, 302);
             dgvEmpleadosDisponibles.Name = "dgvEmpleadosDisponibles";
             dgvEmpleadosDisponibles.RowHeadersWidth = 51;
-            dgvEmpleadosDisponibles.Size = new Size(418, 302);
+            dgvEmpleadosDisponibles.Size = new Size(508, 302);
             dgvEmpleadosDisponibles.TabIndex = 0;
             dgvEmpleadosDisponibles.UseWaitCursor = true;
             // 
@@ -756,7 +756,7 @@
             tlpTitulo.Name = "tlpTitulo";
             tlpTitulo.RowCount = 1;
             tlpTitulo.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tlpTitulo.Size = new Size(924, 76);
+            tlpTitulo.Size = new Size(1104, 76);
             tlpTitulo.TabIndex = 3;
             tlpTitulo.UseWaitCursor = true;
             // 
@@ -766,7 +766,7 @@
             lblEmpleadoProyecto.AutoSize = true;
             lblEmpleadoProyecto.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblEmpleadoProyecto.ForeColor = Color.Navy;
-            lblEmpleadoProyecto.Location = new Point(465, 22);
+            lblEmpleadoProyecto.Location = new Point(555, 22);
             lblEmpleadoProyecto.Name = "lblEmpleadoProyecto";
             lblEmpleadoProyecto.Size = new Size(107, 31);
             lblEmpleadoProyecto.TabIndex = 1;
@@ -799,7 +799,7 @@
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1008, 628);
+            tabControl1.Size = new Size(1188, 628);
             tabControl1.TabIndex = 2;
             tabControl1.UseWaitCursor = true;
             // 
@@ -808,11 +808,11 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(1008, 659);
+            ClientSize = new Size(1188, 659);
             Controls.Add(tabControl1);
             Controls.Add(statusStrip1);
             FormBorderStyle = FormBorderStyle.Fixed3D;
-            MinimumSize = new Size(1030, 710);
+            MinimumSize = new Size(1210, 710);
             Name = "FormAsignacionProyecto";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterParent;

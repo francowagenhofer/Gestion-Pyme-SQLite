@@ -34,13 +34,13 @@
             tlpMenuEmpleados = new TableLayoutPanel();
             tlpBotones = new TableLayoutPanel();
             btnAgregar = new Button();
-            btnAsignaciones = new Button();
             btnModificar = new Button();
             btnVerDetalle = new Button();
             btnSalir = new Button();
             btnEliminar = new Button();
             tlpFiltrar = new TableLayoutPanel();
             tbFiltro = new TextBox();
+            btnAsignaciones = new Button();
             cbActivo = new CheckBox();
             tlpTitulo = new TableLayoutPanel();
             lblTitulo = new Label();
@@ -59,7 +59,7 @@
             stEmpleados.Items.AddRange(new ToolStripItem[] { tsFecha, tsEstado });
             stEmpleados.Location = new Point(0, 628);
             stEmpleados.Name = "stEmpleados";
-            stEmpleados.Size = new Size(1008, 31);
+            stEmpleados.Size = new Size(1188, 31);
             stEmpleados.TabIndex = 0;
             // 
             // tsFecha
@@ -98,7 +98,7 @@
             tlpMenuEmpleados.RowStyles.Add(new RowStyle(SizeType.Percent, 65F));
             tlpMenuEmpleados.RowStyles.Add(new RowStyle(SizeType.Percent, 35F));
             tlpMenuEmpleados.RowStyles.Add(new RowStyle(SizeType.Absolute, 25F));
-            tlpMenuEmpleados.Size = new Size(1008, 628);
+            tlpMenuEmpleados.Size = new Size(1188, 628);
             tlpMenuEmpleados.TabIndex = 2;
             // 
             // tlpBotones
@@ -124,7 +124,7 @@
             tlpBotones.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tlpBotones.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tlpBotones.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tlpBotones.Size = new Size(942, 156);
+            tlpBotones.Size = new Size(1122, 156);
             tlpBotones.TabIndex = 0;
             // 
             // btnAgregar
@@ -135,35 +135,21 @@
             btnAgregar.Location = new Point(15, 35);
             btnAgregar.Margin = new Padding(15);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(126, 86);
+            btnAgregar.Size = new Size(156, 86);
             btnAgregar.TabIndex = 0;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
             btnAgregar.Click += btnAgregar_Click;
-            // 
-            // btnAsignaciones
-            // 
-            btnAsignaciones.Dock = DockStyle.Fill;
-            btnAsignaciones.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAsignaciones.ForeColor = Color.SteelBlue;
-            btnAsignaciones.Location = new Point(658, 10);
-            btnAsignaciones.Margin = new Padding(0);
-            btnAsignaciones.Name = "btnAsignaciones";
-            btnAsignaciones.Size = new Size(284, 44);
-            btnAsignaciones.TabIndex = 5;
-            btnAsignaciones.Text = "Gestionar Asignaciones";
-            btnAsignaciones.UseVisualStyleBackColor = true;
-            btnAsignaciones.Click += btnAsignaciones_Click;
             // 
             // btnModificar
             // 
             btnModificar.Dock = DockStyle.Fill;
             btnModificar.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnModificar.ForeColor = Color.SteelBlue;
-            btnModificar.Location = new Point(171, 35);
+            btnModificar.Location = new Point(201, 35);
             btnModificar.Margin = new Padding(15);
             btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(126, 86);
+            btnModificar.Size = new Size(156, 86);
             btnModificar.TabIndex = 1;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
@@ -174,10 +160,10 @@
             btnVerDetalle.Dock = DockStyle.Fill;
             btnVerDetalle.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnVerDetalle.ForeColor = Color.SteelBlue;
-            btnVerDetalle.Location = new Point(327, 35);
+            btnVerDetalle.Location = new Point(387, 35);
             btnVerDetalle.Margin = new Padding(15);
             btnVerDetalle.Name = "btnVerDetalle";
-            btnVerDetalle.Size = new Size(126, 86);
+            btnVerDetalle.Size = new Size(156, 86);
             btnVerDetalle.TabIndex = 2;
             btnVerDetalle.Text = "Ver Detalle";
             btnVerDetalle.UseVisualStyleBackColor = true;
@@ -188,10 +174,10 @@
             btnSalir.Dock = DockStyle.Fill;
             btnSalir.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSalir.ForeColor = Color.SteelBlue;
-            btnSalir.Location = new Point(795, 35);
+            btnSalir.Location = new Point(945, 35);
             btnSalir.Margin = new Padding(15);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(132, 86);
+            btnSalir.Size = new Size(162, 86);
             btnSalir.TabIndex = 4;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
@@ -202,10 +188,10 @@
             btnEliminar.Dock = DockStyle.Fill;
             btnEliminar.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEliminar.ForeColor = Color.SteelBlue;
-            btnEliminar.Location = new Point(483, 35);
+            btnEliminar.Location = new Point(573, 35);
             btnEliminar.Margin = new Padding(15);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(126, 86);
+            btnEliminar.Size = new Size(156, 86);
             btnEliminar.TabIndex = 3;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -214,9 +200,9 @@
             // tlpFiltrar
             // 
             tlpFiltrar.ColumnCount = 3;
-            tlpFiltrar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
-            tlpFiltrar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
-            tlpFiltrar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
+            tlpFiltrar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 38.17563F));
+            tlpFiltrar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.152523F));
+            tlpFiltrar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 28.6718464F));
             tlpFiltrar.Controls.Add(tbFiltro, 0, 1);
             tlpFiltrar.Controls.Add(btnAsignaciones, 2, 1);
             tlpFiltrar.Controls.Add(cbActivo, 1, 1);
@@ -228,7 +214,7 @@
             tlpFiltrar.RowStyles.Add(new RowStyle(SizeType.Absolute, 10F));
             tlpFiltrar.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tlpFiltrar.RowStyles.Add(new RowStyle(SizeType.Absolute, 10F));
-            tlpFiltrar.Size = new Size(942, 64);
+            tlpFiltrar.Size = new Size(1122, 64);
             tlpFiltrar.TabIndex = 1;
             // 
             // tbFiltro
@@ -240,9 +226,23 @@
             tbFiltro.Margin = new Padding(0);
             tbFiltro.Name = "tbFiltro";
             tbFiltro.PlaceholderText = "Buscar por nombre, apellido, DNI o categoría...";
-            tbFiltro.Size = new Size(376, 31);
+            tbFiltro.Size = new Size(426, 31);
             tbFiltro.TabIndex = 1;
             tbFiltro.TextChanged += tbFiltrar_TextChanged;
+            // 
+            // btnAsignaciones
+            // 
+            btnAsignaciones.Dock = DockStyle.Fill;
+            btnAsignaciones.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAsignaciones.ForeColor = Color.SteelBlue;
+            btnAsignaciones.Location = new Point(799, 10);
+            btnAsignaciones.Margin = new Padding(0);
+            btnAsignaciones.Name = "btnAsignaciones";
+            btnAsignaciones.Size = new Size(323, 44);
+            btnAsignaciones.TabIndex = 5;
+            btnAsignaciones.Text = "Gestionar Asignaciones";
+            btnAsignaciones.UseVisualStyleBackColor = true;
+            btnAsignaciones.Click += btnAsignaciones_Click;
             // 
             // cbActivo
             // 
@@ -250,7 +250,7 @@
             cbActivo.AutoSize = true;
             cbActivo.FlatStyle = FlatStyle.Flat;
             cbActivo.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cbActivo.Location = new Point(391, 17);
+            cbActivo.Location = new Point(443, 17);
             cbActivo.Margin = new Padding(15, 0, 0, 0);
             cbActivo.MinimumSize = new Size(200, 25);
             cbActivo.Name = "cbActivo";
@@ -273,7 +273,7 @@
             tlpTitulo.Name = "tlpTitulo";
             tlpTitulo.RowCount = 1;
             tlpTitulo.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tlpTitulo.Size = new Size(942, 64);
+            tlpTitulo.Size = new Size(1122, 64);
             tlpTitulo.TabIndex = 2;
             // 
             // lblTitulo
@@ -282,7 +282,7 @@
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTitulo.ForeColor = Color.Navy;
-            lblTitulo.Location = new Point(317, 13);
+            lblTitulo.Location = new Point(407, 13);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(307, 38);
             lblTitulo.TabIndex = 0;
@@ -303,7 +303,7 @@
             dgvEmpleados.RowHeadersVisible = false;
             dgvEmpleados.RowHeadersWidth = 51;
             dgvEmpleados.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvEmpleados.Size = new Size(942, 294);
+            dgvEmpleados.Size = new Size(1122, 294);
             dgvEmpleados.TabIndex = 3;
             // 
             // FormEmpleados
@@ -311,11 +311,11 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(1008, 659);
+            ClientSize = new Size(1188, 659);
             Controls.Add(tlpMenuEmpleados);
             Controls.Add(stEmpleados);
             FormBorderStyle = FormBorderStyle.Fixed3D;
-            MinimumSize = new Size(1030, 710);
+            MinimumSize = new Size(1210, 710);
             Name = "FormEmpleados";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterParent;

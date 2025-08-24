@@ -19,6 +19,10 @@ namespace negocio
 
         public AccesoDatos()
         {
+            //  Dos formas de manejar la base de datos: 
+            // 1 - Clase GestionarPymeDB
+            // 2 - Archivo CreateDB.db
+
             // Clase GestorPymeDB
             //GestorPymeDB.InicializarBaseDeDatos();
             //conexion = new SqliteConnection(GestorPymeDB.connectionString);

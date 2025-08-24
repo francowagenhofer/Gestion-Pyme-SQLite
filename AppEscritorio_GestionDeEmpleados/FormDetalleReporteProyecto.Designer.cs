@@ -44,7 +44,7 @@
             statusStrip1.ImageScalingSize = new Size(20, 20);
             statusStrip1.Location = new Point(0, 377);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(1008, 22);
+            statusStrip1.Size = new Size(1188, 22);
             statusStrip1.TabIndex = 0;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -63,7 +63,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 70F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 25F));
-            tableLayoutPanel1.Size = new Size(1008, 377);
+            tableLayoutPanel1.Size = new Size(1188, 377);
             tableLayoutPanel1.TabIndex = 1;
             // 
             // label1
@@ -72,7 +72,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Navy;
-            label1.Location = new Point(385, 16);
+            label1.Location = new Point(475, 16);
             label1.Name = "label1";
             label1.Size = new Size(238, 38);
             label1.TabIndex = 0;
@@ -91,7 +91,7 @@
             tableLayoutPanel2.RowCount = 2;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 61.7886162F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 38.2113838F));
-            tableLayoutPanel2.Size = new Size(942, 276);
+            tableLayoutPanel2.Size = new Size(1122, 276);
             tableLayoutPanel2.TabIndex = 1;
             // 
             // dgvDetalleRepProyecto
@@ -101,7 +101,7 @@
             dgvDetalleRepProyecto.Location = new Point(3, 3);
             dgvDetalleRepProyecto.Name = "dgvDetalleRepProyecto";
             dgvDetalleRepProyecto.RowHeadersWidth = 51;
-            dgvDetalleRepProyecto.Size = new Size(936, 164);
+            dgvDetalleRepProyecto.Size = new Size(1116, 164);
             dgvDetalleRepProyecto.TabIndex = 0;
             // 
             // btnSalir
@@ -109,7 +109,7 @@
             btnSalir.Anchor = AnchorStyles.None;
             btnSalir.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSalir.ForeColor = Color.SteelBlue;
-            btnSalir.Location = new Point(392, 194);
+            btnSalir.Location = new Point(482, 194);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(158, 57);
             btnSalir.TabIndex = 1;
@@ -122,10 +122,11 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(1008, 399);
+            ClientSize = new Size(1188, 399);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(statusStrip1);
             FormBorderStyle = FormBorderStyle.Fixed3D;
+            MinimumSize = new Size(1210, 450);
             Name = "FormDetalleReporteProyecto";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterParent;
